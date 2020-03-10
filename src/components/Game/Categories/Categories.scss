@@ -1,0 +1,112 @@
+.user_home_div {
+  background-color: #ed5d31;
+  height: 620px;
+}
+.user_details_div {
+  box-shadow: 0px 2px;
+  height: 120px;
+  justify-content: center;
+}
+.vedantu_logo {
+  align-self: center;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  top: -20px;
+  margin-left: -18px;
+}
+.user_image {
+    height: 60px;
+    width: 60px;
+    justify-content: right;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 1277px;
+    top: -123px;
+}
+.user_image:hover {
+  box-shadow: 2px 2px 20px 15px white;
+}
+.user_nick_name {
+  font-size: 30px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  position: relative;
+  margin-left: 1084px;
+  top: -176px;
+}
+.Different_category {
+  height: 500px;
+  width: 100%;
+  background-size: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg");
+}
+.Category_name {
+  text-transform: uppercase;
+  text-shadow: -1px -2px coral;
+  color: #84e703;
+  font-size: 40px;
+  font-family: Serif;
+  font-weight: 600px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.all_categories_display_div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Card_main {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDPVI6zNXoGnr7Vzx1-bmXgFMdtJhW0pPdibWcQbjqFBai20yKRA");
+  margin-top: 52px;
+  margin-left: 195px;
+  height: 140px;
+  width: 182px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.Card_main:hover {
+  box-shadow: 2px 2px 20px 15px white;
+}
+.diff_category_name {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 21px;
+  color: white;
+  font-family: cursive;
+  position: relative;
+  top: -24px;
+}
+
+.differ_categories {
+  width: 100px;
+  height: 100px;
+  margin-top: 7px;
+  margin-left: 41px;
+  padding: 23px;
+}
+
+@media only screen and (max-width: 400px) {
+  .user_image {
+    margin-left: 295px;
+  }
+  .user_nick_name {
+    margin-left: 270px;
+  }
+  .vedantu_logo {
+    margin-left: -19px;
+    top: -17px;
+    position: relative;
+  }
+  .Card_main{
+      margin-left:85px;
+      cursor: pointer;
+  }
+  .Card_main:hover{
+    box-shadow: 2px 2px 20px 15px white;
+  }
+  .Different_category{
+      height: 1300px;
+  }
+}

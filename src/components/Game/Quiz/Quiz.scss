@@ -1,0 +1,118 @@
+.quiz {
+  background-image: linear-gradient(54deg, #f55a29 -68%, #ff722e 102%);
+  color: white;
+  display: flex;
+  // justify-content: space-between;
+  height: 620px;
+
+  .questionContainer {
+    .questionDiv {
+      margin: 15px;
+      background-color: white;
+      border-radius: 10px;
+      height: 590px;
+      width: 930px;
+      .timer {
+        // color: #f55a29;
+        color: white;
+        // background-color: black;
+        background-image: linear-gradient(to right, #5b7cf9, #5274f4, #4a6bef, #4163e9, #375be4);
+
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        // width: 930px;
+        // text-align: center;
+        display: flex;
+
+        justify-content: space-between;
+        .circleContainer {
+            padding: 15px 60px 10px; 
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          .circle {
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+            height: 75px;
+            width: 80px;
+            border: 2px solid gray;
+            border-radius: 50%;
+          }
+          .label {
+              font-size: 30px;
+            //   color: rgb(3, 3, 206);
+            color: white;
+              font-weight: bold;
+          }
+        }
+      }
+
+      .question {
+        padding: 0px 50px;
+        color: black;
+        font-weight: bold;
+        font-size: 40px;
+        min-height: 210px;
+        min-width: 930px;
+      }
+    }
+    .optionContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .options {
+        z-index: 100px;
+        background-color: white;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 15px;
+        height: 80px;
+        width: 350px;
+        border-radius: 20px;
+        color: black;
+        box-shadow: 0px 2px 18px 7px rgba(189, 189, 189, 0.21);
+        transition: all 0.25s linear;
+        cursor: pointer;
+        animation: fadeIn 0.5s 0.1s both;
+      }
+      .correct {
+        background-color: green;
+      }
+      .incorrect {
+        background-color: red;
+      }
+      .options:hover {
+        transform: scale(1.05);
+      }
+    }
+    .waitingDiv {
+      color: #f55a29;
+      margin: 20px;
+      font-style: italic;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  .right {
+    width: 400px;
+    // border-left: 2px solid white;
+    .leaderBoard {
+      height: 350px;
+    }
+    .chatContainer {
+      // border-top: 2px solid white;
+      height: 210px;
+      .chatDiv {
+        margin: 15px;
+        margin-left: 0;
+        background-color: white;
+        border-radius: 10px;
+        height: 225px;
+        width: 390px;
+      }
+    }
+  }
+}
